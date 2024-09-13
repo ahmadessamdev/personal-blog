@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on Ahmad Essam</title>
+    <link>//localhost:1313/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on Ahmad Essam</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix: &#34;Initramfs unpacking failed&#34; while trying to install Ubuntu Server in Virtual Box</title>
+      <link>//localhost:1313/posts/fix-virtual-box/</link>
+      <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/fix-virtual-box/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This tutorial requires Linux. If you want to test your flash under windows check out: &lt;a href=&#34;https://www.raymond.cc/blog/test-and-detect-fake-or-counterfeit-usb-flash-drives-bought-from-ebay-with-h2testw&#34;&gt;test-and-detect-fake-flash-with-h2testw&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you have a corrupted flash memory, you copy files into it and when you try to open it later, they don&amp;rsquo;t work. There are number of reasons for this problem, one of them is aging, &lt;a href=&#34;https://en.wikipedia.org/wiki/Flash_memory#Write_endurance&#34;&gt;flash memories have a lifetime too&lt;/a&gt; and there is a limited number of writes. If this was the cause of the problem, then it is time to retire it. Another reason could be that you have a counterfeit or defected flash, I will show you how to get something out of it in this case, but don&amp;rsquo;t expect much.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>F3 on Ahmad Essam</title>
+    <link>//localhost:1313/tags/f3/</link>
+    <description>Recent content in F3 on Ahmad Essam</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/f3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to recover a corrupted flash memory using F3 tools under Linux</title>
+      <link>//localhost:1313/posts/recover-flash-memory/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/recover-flash-memory/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This tutorial requires Linux. If you want to test your flash under windows check out: &lt;a href=&#34;https://www.raymond.cc/blog/test-and-detect-fake-or-counterfeit-usb-flash-drives-bought-from-ebay-with-h2testw&#34;&gt;test-and-detect-fake-flash-with-h2testw&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;So you have a corrupted flash memory, you copy files into it and when you try to open it later, they don&amp;rsquo;t work. There are number of reasons for this problem, one of them is aging, &lt;a href=&#34;https://en.wikipedia.org/wiki/Flash_memory#Write_endurance&#34;&gt;flash memories have a lifetime too&lt;/a&gt; and there is a limited number of writes. If this was the cause of the problem, then it is time to retire it. Another reason could be that you have a counterfeit or defected flash, I will show you how to get something out of it in this case, but don&amp;rsquo;t expect much.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>How to recover a corrupted flash memory using F3 tools under Linux // Ahmad Essam</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.134.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Ahmad Essam" />
+    <meta name="description" content="Step by step tutorial for restoring the working part of a corrupted Flash memory using F3 tools under Linux" />
+    <link rel="stylesheet" href="/css/main.min.5b1fcc8902588589c4767187402a3c29f8b8d7a6fdef6d9f8f77045bb0d14fee.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to recover a corrupted flash memory using F3 tools under Linux">
+  <meta name="twitter:description" content="Step by step tutorial for restoring the working part of a corrupted Flash memory using F3 tools under Linux">
+
+    <meta property="og:url" content="//localhost:1313/posts/recover-flash-memory/">
+  <meta property="og:site_name" content="Ahmad Essam">
+  <meta property="og:title" content="How to recover a corrupted flash memory using F3 tools under Linux">
+  <meta property="og:description" content="Step by step tutorial for restoring the working part of a corrupted Flash memory using F3 tools under Linux">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-11-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2017-11-29T00:00:00+00:00">
+    <meta property="article:tag" content="Flash">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="F3">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="//localhost:1313/"><img class="app-header-avatar" src="/images/palm-logo.png" alt="Ahmad Essam" /></a>
+      <span class="app-header-title">Ahmad Essam</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/posts/">Posts</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+      </nav>
+      <p>Sofware Engineer specialized in Back-end, Technical Translator for Websites and software from English to Arabic</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/ahmadessamdev" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">How to recover a corrupted flash memory using F3 tools under Linux</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Nov 20, 2017
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          6 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="//localhost:1313/tags/flash/">Flash</a>
+              <a class="tag" href="//localhost:1313/tags/linux/">Linux</a>
+              <a class="tag" href="//localhost:1313/tags/f3/">F3</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><strong>Note:</strong> This tutorial requires Linux. If you want to test your flash under windows check out: <a href="https://www.raymond.cc/blog/test-and-detect-fake-or-counterfeit-usb-flash-drives-bought-from-ebay-with-h2testw">test-and-detect-fake-flash-with-h2testw</a></p>
+<p>So you have a corrupted flash memory, you copy files into it and when you try to open it later, they don&rsquo;t work. There are number of reasons for this problem, one of them is aging, <a href="https://en.wikipedia.org/wiki/Flash_memory#Write_endurance">flash memories have a lifetime too</a> and there is a limited number of writes. If this was the cause of the problem, then it is time to retire it. Another reason could be that you have a counterfeit or defected flash, I will show you how to get something out of it in this case, but don&rsquo;t expect much.</p>
+<p>Recently someone brought to me a 200GB flash memory having this problem, from the looks of it you can tell for sure that it is a counterfiet. After using F3 tools on it, I found that its actual size is 100MB. F3 was able to recover this 100MB and it was working fine as a flash memory with a partition size equal to 0.005% of it is declared size!</p>
+<p>In this tutorial, I will show you how to test your flash memory for problems using F3 command line tools, and if possible, recover its working part.</p>
+<h1 id="so-what-is-f3">So what is F3?</h1>
+<p><a href="http://oss.digirati.com.br/f3/">F3</a> is an open source command line utility created by Michel Machado. You can find the package in the official Debian repositories and probably in your distrubtion repositories. The package description says:</p>
+<blockquote>
+<p>F3 (Fight Flash Fraud or Fight Fake Flash) tests the full capacity of a
+flash card (flash drive, flash disk, pen drive).</p>
+</blockquote>
+<blockquote>
+<p>F3 writes to the card and then checks if can read it. It will assure you have not been bought a card with a smaller capacity than stated. Note that the main goal of F3 is not to fix your removable media. However, there are resources to mark the invalid areas.</p>
+</blockquote>
+<blockquote>
+<p>This package provides these executables: f3write, f3read, f3brew, f3fix
+and f3probe.</p>
+</blockquote>
+<p>Fair enough, lets get started. Install the package or build from <a href="https://github.com/AltraMayor/f3">source</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>sudo apt-get install f3
+</span></span></code></pre></div>
+<h1 id="test-the-flash">Test the flash</h1>
+<p>First, we will test the flash thoroughly. We will fill it with data, then check this data for errors. Format the flash, mount it, then pass the mount folder to <code>f3write</code> to start filling it:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>f3write /media/user/mounted_flash
+</span></span></code></pre></div>
+<p>Then do the check:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>f3read /media/user/mounted_flash
+</span></span></code></pre></div>
+<p>The time this check takes depends on the declared size of your flash. If the flash passed this test without a problem, then your flash is working fine. If you get data losses, then, unfortunately, it&rsquo;s corrupted. Keep reading to find out its actual size and see if you can get something out of it.</p>
+<h1 id="fix-attempt">Fix attempt</h1>
+<p>I had an old 1GB flash which had a defected part from the time I got it. Here is the result I had from testing it using f3write and f3read:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>                  SECTORS      ok/corrupted/changed/overwritten
+</span></span><span style="display:flex;"><span>Validating file 1.h2w ... 1021326/   991976/      0/      2
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>  Data OK: 498.69 MB (1021326 sectors)
+</span></span><span style="display:flex;"><span>Data LOST: 484.36 MB (991978 sectors)
+</span></span><span style="display:flex;"><span>               Corrupted: 484.36 MB (991976 sectors)
+</span></span><span style="display:flex;"><span>        Slightly changed: 0.00 Byte (0 sectors)
+</span></span><span style="display:flex;"><span>             Overwritten: 1.00 KB (2 sectors)
+</span></span><span style="display:flex;"><span>Average reading speed: 21.21 MB/s
+</span></span></code></pre></div>
+<p>The results show clearly that half of my old flash is corrupted. <code>f3probe</code> probes flash for counterfeits and identifies its real size. However, this tool is experimental according to the author. It is data destructive, takes a device as an argument. Use it on unmounted flashes.</p>
+<p><strong>Take extreme care</strong> not to pass the wrong device. Double check by running <code>lsblk</code>, here is the first lines of my output of <code>lsblk</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>&gt; lsblk
+</span></span><span style="display:flex;"><span>NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
+</span></span><span style="display:flex;"><span>sr0 11:0 1 1024M 0 rom
+</span></span><span style="display:flex;"><span>sdc 8:32 1 986M 0 disk
+</span></span><span style="display:flex;"><span>└─sdc1 8:33 1 985M 0 part
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div>
+<p>My device is <code>/dev/sdc</code>. I made <code>f3probe /dev/sdc</code> and after a few seconds I got the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>f3 probe 6.0
+</span></span><span style="display:flex;"><span>Copyright (C) 2010 Digirati Internet LTDA.
+</span></span><span style="display:flex;"><span>This is free software; see the source for copying conditions.
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>WARNING: Probing normally takes from a few seconds to 15 minutes, but
+</span></span><span style="display:flex;"><span>         it can take longer. Please be patient.
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Probe finished, recovering blocks... Done
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Bad news: The device `/dev/sdc&#39; is a counterfeit of type limbo
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>You can &#34;fix&#34; this device using the following command:
+</span></span><span style="display:flex;"><span>f3fix --last-sec=1015872 /dev/sdc
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Device geometry:
+</span></span><span style="display:flex;"><span>                 *Usable* size: 496.03 MB (1015873 blocks)
+</span></span><span style="display:flex;"><span>                Announced size: 986.00 MB (2019328 blocks)
+</span></span><span style="display:flex;"><span>                        Module: 1.00 GB (2^30 Bytes)
+</span></span><span style="display:flex;"><span>        Approximate cache size: 0.00 Byte (0 blocks), need-reset=yes
+</span></span><span style="display:flex;"><span>           Physical block size: 512.00 Byte (2^9 Bytes)
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Probe time: 16.10s
+</span></span></code></pre></div>
+<p><code>f3probe</code> output says my device is a counterfeit and its real size is 496 MB which is similar to the working part size from the read and write test. Further more, it gave me the command to fix it, your fix command will be different from mine. It fixes the flash by creating a partition from the working part only and discard the fake part. I disconnected the device and inserted it again before running the given command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span># sudo ./f3fix --last-sec<span style="color:#f92672">=</span><span style="color:#ae81ff">1015872</span> /dev/sdc
+</span></span><span style="display:flex;"><span>F3 fix 6.0
+</span></span><span style="display:flex;"><span>Copyright (C) 2010 Digirati Internet LTDA.
+</span></span><span style="display:flex;"><span>This is free software; see the source for copying conditions.
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Drive `/dev/sdc&#39; was successfully fixed
+</span></span></code></pre></div>
+<p>That&rsquo;s it, this last command took no time at all. I formatted my flash as usual and it was working fine. To understand what <code>f3fix</code> did, here is a screenshot of my flash device in <a href="https://gparted.org/">Gparted</a> partition editor.</p>
+<figure><img src="/images/gparted.png"><figcaption>
+      <h4>Gparted screenshot of the fixed flash</h4>
+    </figcaption>
+</figure>
+
+<p>The green rectangle is the newly created partition that <code>f3fix</code> created. The rest is the fake part which is now left without partitioning. It is clear that this is not a permanent fix, you can recreate partitions anytime, that&rsquo;s what I did for the purpose of this tutorial. But if you left the partition table as <code>f3fix</code> did, you should be able to format this partition and use it without a problem.</p>
+<p>At last, you need to test the flash partition. Sometimes the first test fails after fixing. From the <code>f3</code> docs:</p>
+<blockquote>
+<p>If you get some sectors corrupted, repeat the f3write/f3read test. Some drives recover from these failures on a second full write cycle. However, if the corrupted sectors persist, the drive is junk because not only is it a fake drive, but its real memory is already failing</p>
+</blockquote>
+<p>I tested mine and this was the result:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-console" data-lang="console"><span style="display:flex;"><span>                  SECTORS      ok/corrupted/changed/overwritten
+</span></span><span style="display:flex;"><span>Validating file 1.h2w ... 1013280/        0/      0/      0
+</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>  Data OK: 494.77 MB (1013280 sectors)
+</span></span><span style="display:flex;"><span>Data LOST: 0.00 Byte (0 sectors)
+</span></span><span style="display:flex;"><span>               Corrupted: 0.00 Byte (0 sectors)
+</span></span><span style="display:flex;"><span>        Slightly changed: 0.00 Byte (0 sectors)
+</span></span><span style="display:flex;"><span>             Overwritten: 0.00 Byte (0 sectors)
+</span></span><span style="display:flex;"><span>Average reading speed: 15.32 MB/s
+</span></span></code></pre></div>
+<p>That will be all. Hope you found this tutorial useful.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

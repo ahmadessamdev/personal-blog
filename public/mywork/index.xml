@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Myworks on Ahmad Essam</title>
+    <link>//localhost:1313/mywork/</link>
+    <description>Recent content in Myworks on Ahmad Essam</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/mywork/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aljazeera RSS WordPress Plugin</title>
+      <link>//localhost:1313/mywork/aljazeera-rss/</link>
+      <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/mywork/aljazeera-rss/</guid>
+      <description>&lt;p&gt;Aljazeera network is my favourite news and documentaries channel. Aljazeera made a rare example in the Arab world for professional media. I made a WordPress widget to fetch the latest news from aljazeera.net website.&lt;/p&gt;&#xA;&lt;p&gt;The plugin is pretty simple. Fetching the RSS feed and displaying it. It uses Simple Pie library which is already packed with WordPress, and it caches the RSS feed on the server to decrease the number of requests.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
