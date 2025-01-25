@@ -17,7 +17,7 @@
   <meta name="twitter:title" content="Arabic Case Insensitive In Database Systems: How To Solve Alef With and Without Hamza Problem">
   <meta name="twitter:description" content="This tutorial shows how to make case insenstive search in Arabic language fields in databases. Step by step examples shows 3 different ways to make the search function treat Alef with Hamza &#39;أ&#39; and Alef without Hamza &#39;ا&#39; as one character.">
 
-    <meta property="og:url" content="//localhost:1313/posts/arabic-case-insensitive/">
+    <meta property="og:url" content="http://localhost:1313/posts/arabic-case-insensitive/">
   <meta property="og:site_name" content="Ahmad Essam">
   <meta property="og:title" content="Arabic Case Insensitive In Database Systems: How To Solve Alef With and Without Hamza Problem">
   <meta property="og:description" content="This tutorial shows how to make case insenstive search in Arabic language fields in databases. Step by step examples shows 3 different ways to make the search function treat Alef with Hamza &#39;أ&#39; and Alef without Hamza &#39;ا&#39; as one character.">
@@ -34,7 +34,7 @@
   </head>
   <body>
     <header class="app-header">
-      <a href="//localhost:1313/"><img class="app-header-avatar" src="/images/palm-logo.png" alt="Ahmad Essam" /></a>
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/images/palm-logo.png" alt="Ahmad Essam" /></a>
       <span class="app-header-title">Ahmad Essam</span>
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/posts/">Posts</a>
@@ -42,7 +42,7 @@
           
           <a class="app-header-menu-item" href="/tags/">Tags</a>
       </nav>
-      <p>Sofware Engineer specialized in Back-end, Technical Translator for Websites and software from English to Arabic</p>
+      <p>Sofware Engineer trying to make better software!</p>
       <div class="app-header-social">
         
           <a href="https://github.com/ahmadessamdev" target="_blank" rel="noreferrer noopener me">
@@ -79,9 +79,9 @@
   <title>tag</title>
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
 </svg>
-              <a class="tag" href="//localhost:1313/tags/database/">Database</a>
-              <a class="tag" href="//localhost:1313/tags/arabic/">Arabic</a>
-              <a class="tag" href="//localhost:1313/tags/mysql/">MySQL</a>
+              <a class="tag" href="http://localhost:1313/tags/database/">Database</a>
+              <a class="tag" href="http://localhost:1313/tags/arabic/">Arabic</a>
+              <a class="tag" href="http://localhost:1313/tags/mysql/">MySQL</a>
         </div>
       </div>
     </header>
@@ -257,7 +257,26 @@
 
     </div>
     <div class="post-footer">
-      
+      <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ahmedspace-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
   </article>
 

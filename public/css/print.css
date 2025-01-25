@@ -1,4 +1,4 @@
-.sidebar, .share-buttons, .comments, .readtime {
+.sidebar {
   display: none !important;
 }
 

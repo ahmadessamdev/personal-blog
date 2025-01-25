@@ -1,0 +1,23 @@
+baseURL = 'https://ahmadessamdev.xyz'
+languageCode = 'en-us'
+title = 'Ahmad Essam'
+
+theme = "hyde"
+disqusShortname = "ahmedspace-com"
+
+[params]
+    themeColor = "theme-base-0b"
+    description = "Sofware Engineer specialized in Back-end, Technical Translator for Websites and software from English to Arabic"
+#   avatar = "images/palm-logo.png"
+#  [[params.social]]
+#    icon = "github"
+#    name = "Github"
+#    url = "https://github.com/ahmadessamdev"
+
+[Menus]
+
+  main = [
+       { Name = "Posts", URL = "/posts/" },
+       { Name = "Tags", URL = "/tags/" } 
+  ]
+  

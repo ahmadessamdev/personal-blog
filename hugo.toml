@@ -6,9 +6,17 @@ theme = "m10c"
 
 [params]
   author = "Ahmad Essam"
-  description = "Sofware Engineer specialized in Back-end, Technical Translator for Websites and software from English to Arabic"
+  description = "Sofware Engineer trying to make better software!"
   menu_item_separator = " - "
   avatar = "images/palm-logo.png"
+  #favicon=
+  
+
+[services]
+  [services.disqus]
+    shortname = 'ahmedspace-com'
+
+
   [[params.social]]
     icon = "github"
     name = "Github"
