@@ -1,7 +1,6 @@
 baseURL = 'https://ahmadessamdev.xyz'
 languageCode = 'en-us'
 title = 'Ahmad Essam'
-
 theme = "m10c"
 
 [params]
