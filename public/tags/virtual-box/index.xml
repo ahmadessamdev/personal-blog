@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtual Box on Ahmad Essam</title>
-    <link>https://ahmadessamdev.xyz/tags/virtual-box/</link>
+    <link>http://localhost:1313/tags/virtual-box/</link>
     <description>Recent content in Virtual Box on Ahmad Essam</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ahmadessamdev.xyz/tags/virtual-box/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/virtual-box/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fix: &#34;Initramfs unpacking failed&#34; while trying to install Ubuntu Server in Virtual Box</title>
-      <link>https://ahmadessamdev.xyz/posts/fix-virtual-box/</link>
+      <link>http://localhost:1313/posts/fix-virtual-box/</link>
       <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://ahmadessamdev.xyz/posts/fix-virtual-box/</guid>
-      <description>&lt;p&gt;Just posting a fix that took me hours of googling. While trying to install Ubuntu Server 20.04 on Virtual Box 6.1, and after mounting the Ubuntu Server ISO then starting the VM, I encountered this error:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://ahmadessamdev.xyz/images/error-screenshot.png&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Screenshot of the error at startup&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Turns out I reduced the RAM of the VM to be &lt;strong&gt;512MB&lt;/strong&gt;, adjusting the RAM to &lt;strong&gt;768MB&lt;/strong&gt; fixed it!&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/fix-virtual-box/</guid>
+      <description>&lt;p&gt;Just posting a fix that took me hours of googling. While trying to install Ubuntu Server 20.04 on Virtual Box 6.1, and after mounting the Ubuntu Server ISO then starting the VM, I encountered this error:&lt;/p&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/error-screenshot.png&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Screenshot of the error at startup&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Turns out I reduced the RAM of the VM to be &lt;strong&gt;512MB&lt;/strong&gt;, adjusting the RAM to &lt;strong&gt;768MB&lt;/strong&gt; fixed it!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
