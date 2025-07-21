@@ -2,18 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Myworks on Ahmad Essam</title>
-    <link>//localhost:1313/mywork/</link>
+    <link>https://ahmadessamdev.xyz/mywork/</link>
     <description>Recent content in Myworks on Ahmad Essam</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jun 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/mywork/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ahmadessamdev.xyz/mywork/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Aljazeera RSS WordPress Plugin</title>
-      <link>//localhost:1313/mywork/aljazeera-rss/</link>
-      <pubDate>Sat, 06 Jun 2015 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/mywork/aljazeera-rss/</guid>
-      <description>&lt;p&gt;Aljazeera network is my favourite news and documentaries channel. Aljazeera made a rare example in the Arab world for professional media. I made a WordPress widget to fetch the latest news from aljazeera.net website.&lt;/p&gt;&#xA;&lt;p&gt;The plugin is pretty simple. Fetching the RSS feed and displaying it. It uses Simple Pie library which is already packed with WordPress, and it caches the RSS feed on the server to decrease the number of requests.&lt;/p&gt;</description>
+      <title>Aljazeera RSS plugin</title>
+      <link>https://ahmadessamdev.xyz/mywork/aljazeera-rss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ahmadessamdev.xyz/mywork/aljazeera-rss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ketab Wordpress Theme</title>
+      <link>https://ahmadessamdev.xyz/mywork/ketab-wordpress-theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ahmadessamdev.xyz/mywork/ketab-wordpress-theme/</guid>
+      <description>&lt;p&gt;A responsive vantage wordpress theme created while learning theme desgin and development years ago. I designed it from scratch without using any frameworks then (except for styling I used bootstrap).&lt;/p&gt;&#xA;&lt;p&gt;Note: Theme needs to be updated for use with latest WordPress Version.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OrionX Company WordPress site</title>
+      <link>https://ahmadessamdev.xyz/mywork/orionx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ahmadessamdev.xyz/mywork/orionx/</guid>
+      <description>&lt;p&gt;A responsive, modern design website. It uses a theme purchased from Theme Forest and made by Theme Pure Inc.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

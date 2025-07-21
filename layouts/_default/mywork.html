@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <article>
+    <h1 style="margin-bottom:5%;">My Work</h1>
+    <ul class="posts-list mywork-container">
+      {{ range .Paginator.Pages }}
+      <li class="posts-list-item mywork-item">
+		  {{ with .Params.featured_image }}
+		  <div class="feature-image-container">
+			  <img class="feature-image feature-image-list" src="{{ . | absURL }}">
+		  </div>
+          {{ end }}
+		  <div class="text-container">
+			  <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
+			  <span class="posts-list-item-description">
+				  {{ .Description }}
+			  </span>
+		  </div>
+        </li>
+      {{ end }}
+    </ul>
+    {{ partial "pagination.html" $ }}
+  </article>
+{{ end }}

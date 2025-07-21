@@ -24,9 +24,34 @@ figcaption {
     text-align: center;
 }
 
+.mywork-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.mywork-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+}
+
+.feature-image-container {
+    
+    width:300px;
+    margin: 0 1rem 1rem 0;
+}
+
+.text-container {
+    display: block;
+}
+
 .feature-image {
-  float: left;
-  margin: 0 1rem 1rem 0;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .feature-image.feature-image-list {

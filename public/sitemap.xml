@@ -2,61 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://ahmadessamdev.xyz/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://ahmadessamdev.xyz/categories/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/fix-virtual-box/</loc>
+    <loc>https://ahmadessamdev.xyz/posts/fix-virtual-box/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/linux/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/linux/</loc>
+    <loc>https://ahmadessamdev.xyz/categories/linux/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://ahmadessamdev.xyz/posts/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ubuntu-server/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/ubuntu-server/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/virtual-box/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/virtual-box/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/f3/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/f3/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/flash/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/flash/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/recover-flash-memory/</loc>
+    <loc>https://ahmadessamdev.xyz/posts/recover-flash-memory/</loc>
     <lastmod>2017-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/arabic/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/arabic/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/arabic/</loc>
+    <loc>https://ahmadessamdev.xyz/categories/arabic/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/arabic-case-insensitive/</loc>
+    <loc>https://ahmadessamdev.xyz/posts/arabic-case-insensitive/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/database/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/database/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/database/</loc>
+    <loc>https://ahmadessamdev.xyz/categories/database/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mysql/</loc>
+    <loc>https://ahmadessamdev.xyz/tags/mysql/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/mysql/</loc>
+    <loc>https://ahmadessamdev.xyz/categories/mysql/</loc>
     <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ahmadessamdev.xyz/mywork/aljazeera-rss/</loc>
+  </url><url>
+    <loc>https://ahmadessamdev.xyz/mywork/ketab-wordpress-theme/</loc>
+  </url><url>
+    <loc>https://ahmadessamdev.xyz/mywork/</loc>
+  </url><url>
+    <loc>https://ahmadessamdev.xyz/mywork/orionx/</loc>
   </url>
 </urlset>

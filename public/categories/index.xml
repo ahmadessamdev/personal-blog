@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Ahmad Essam</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://ahmadessamdev.xyz/categories/</link>
     <description>Recent content in Categories on Ahmad Essam</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ahmadessamdev.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>http://localhost:1313/categories/linux/</link>
+      <link>https://ahmadessamdev.xyz/categories/linux/</link>
       <pubDate>Sat, 13 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/linux/</guid>
+      <guid>https://ahmadessamdev.xyz/categories/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Arabic</title>
-      <link>http://localhost:1313/categories/arabic/</link>
+      <link>https://ahmadessamdev.xyz/categories/arabic/</link>
       <pubDate>Sat, 15 Apr 2017 16:35:17 +0200</pubDate>
-      <guid>http://localhost:1313/categories/arabic/</guid>
+      <guid>https://ahmadessamdev.xyz/categories/arabic/</guid>
       <description></description>
     </item>
     <item>
       <title>Database</title>
-      <link>http://localhost:1313/categories/database/</link>
+      <link>https://ahmadessamdev.xyz/categories/database/</link>
       <pubDate>Sat, 15 Apr 2017 16:35:17 +0200</pubDate>
-      <guid>http://localhost:1313/categories/database/</guid>
+      <guid>https://ahmadessamdev.xyz/categories/database/</guid>
       <description></description>
     </item>
     <item>
       <title>MySQL</title>
-      <link>http://localhost:1313/categories/mysql/</link>
+      <link>https://ahmadessamdev.xyz/categories/mysql/</link>
       <pubDate>Sat, 15 Apr 2017 16:35:17 +0200</pubDate>
-      <guid>http://localhost:1313/categories/mysql/</guid>
+      <guid>https://ahmadessamdev.xyz/categories/mysql/</guid>
       <description></description>
     </item>
   </channel>

@@ -7,7 +7,8 @@ theme = "m10c"
   author = "Ahmad Essam"
   description = "Sofware Engineer trying to make better software!"
   menu_item_separator = " - "
-  avatar = "images/palm-logo.png"
+  avatar = "images/myphoto.png"
+  customCSS = "css/custom.css"
   #favicon=
   
 
@@ -21,16 +22,28 @@ theme = "m10c"
     name = "Github"
     url = "https://github.com/ahmadessamdev"
 
+ [[params.social]]
+    icon = "linkedin"
+    name = "Linkedin"
+    url = "https://www.linkedin.com/in/ahmadessamdev"
+
 [menu]
 
   [[menu.main]]
-  name = "Posts"
+  identifier = "mywork"
+  name = "My Work"
   weight = 1
+  title= "My Work"
+  url = "/mywork/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 2
   identifier = "posts"
   url = "/posts/"
 
   [[menu.main]]
   identifier = "tags"
   name = "Tags"
-  weight = 2
+  weight = 3
   url = "/tags/"
