@@ -61,6 +61,10 @@ figcaption {
   max-height: 300px;
 }
 
+figure img {
+    border:none;
+}
+
 #flair-container {
   width: 100%;
 }
