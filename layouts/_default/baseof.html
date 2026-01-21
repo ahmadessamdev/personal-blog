@@ -4,9 +4,9 @@
     <title>{{ .Site.Title }}</title>
     {{ with .Site.Params.favicon }}
       {{ $favicon := resources.Get . }}
-    <link rel="shortcut icon" href={{ $favicon.RelPermalink }} />
+    <link rel="shortcut icon" href="{{ $favicon.RelPermalink }}" />
     {{ else }}
-    <link rel="shortcut icon" href={{ "favicon.ico" | relURL }} />
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" />
     {{ end }}
     
     <meta charset="utf-8" />
@@ -17,8 +17,8 @@
     {{ $style := resources.Get "css/main.scss" | resources.ExecuteAsTemplate "css/main.scss" . | css.Sass | resources.Minify | resources.Fingerprint -}}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />  
     {{ with .Site.Params.custom_css }}
-      {{ $custom_css := resources.Get . | resources.Minify | resources.Fingerprint -}}
-    <link rel="stylesheet" href={{ $custom_css.RelPermalink }}/>
+      {{ $custom_css := resources.Get . }}
+    <link rel="stylesheet" href="{{ $custom_css | relURL }}" />
     {{ end }}
 	
     {{ with .OutputFormats.Get "rss" -}}
