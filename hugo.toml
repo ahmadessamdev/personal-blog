@@ -8,8 +8,8 @@ theme = "m10c"
   description = "Sofware Engineer trying to make better software!"
   menu_item_separator = " - "
   avatar = "images/myphoto.png"
-  customCSS = "css/custom.css"
-  #favicon=
+  custom_css = "css/custom.css"
+  favicon="favicon.ico"
   
 
 [services]
@@ -22,10 +22,21 @@ theme = "m10c"
     name = "Github"
     url = "https://github.com/ahmadessamdev"
 
- [[params.social]]
+  [[params.social]]
+    icon = "stackoverflow"
+    name = "stackoverflow"
+    url = "https://stackoverflow.com/users/2760325/ahmad-essam"
+
+  [[params.social]]
+    icon = "medium"
+    name = "medium"
+    url = "https://ahmadessamdev.medium.com"
+
+  [[params.social]]
     icon = "linkedin"
     name = "Linkedin"
     url = "https://www.linkedin.com/in/ahmadessamdev"
+
 
 [menu]
 
