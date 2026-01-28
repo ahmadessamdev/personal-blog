@@ -87,73 +87,401 @@
     </header>
     <main class="app-container">
       
-  <article>
-    <h1 style="margin-bottom:5%;">My Work</h1>
-    <ul class="posts-list mywork-container">
-      
-      <li class="posts-list-item mywork-item">
-		  
-		  <div class="feature-image-container">
-			  <img class="feature-image feature-image-list" src="http://localhost:1313/images/orionx-screenshot.png">
-		  </div>
-          
-		  <div class="text-container">
-			  <a class="posts-list-item-title" href="http://localhost:1313/mywork/orionx/">OrionX Company WordPress site</a>
-			  <span class="posts-list-item-description">
-				  I co-developed this webiste, It is a wordpress that uses a theme purchased from Themeforest
-			  </span>
-		  </div>
-        </li>
-      
-      <li class="posts-list-item mywork-item">
-		  
-		  <div class="feature-image-container">
-			  <img class="feature-image feature-image-list" src="http://localhost:1313/images/aljazeera_rss.png">
-		  </div>
-          
-		  <div class="text-container">
-			  <a class="posts-list-item-title" href="http://localhost:1313/mywork/aljazeera-rss/">Aljazeera RSS plugin</a>
-			  <span class="posts-list-item-description">
-				  WordPress plugin fetches the latest news from Aljaeera Arabic News Website
-			  </span>
-		  </div>
-        </li>
-      
-      <li class="posts-list-item mywork-item">
-		  
-		  <div class="feature-image-container">
-			  <img class="feature-image feature-image-list" src="http://localhost:1313/images/enter-internal-system.png">
-		  </div>
-          
-		  <div class="text-container">
-			  <a class="posts-list-item-title" href="http://localhost:1313/mywork/enter-system/">Internal System for a training center</a>
-			  <span class="posts-list-item-description">
-				  I developed an internal system for a training center handling several internal tasks
-			  </span>
-		  </div>
-        </li>
-      
-      <li class="posts-list-item mywork-item">
-		  
-		  <div class="feature-image-container">
-			  <img class="feature-image feature-image-list" src="http://localhost:1313/images/ketab-theme.png">
-		  </div>
-          
-		  <div class="text-container">
-			  <a class="posts-list-item-title" href="http://localhost:1313/mywork/ketab-wordpress-theme/">Ketab Wordpress Theme</a>
-			  <span class="posts-list-item-description">
-				  Wordpress classic design responsive theme, created from scratch
-			  </span>
-		  </div>
-        </li>
-      
-    </ul>
-    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            line-height: 1.6;
+            min-height: 100vh;
+        }
 
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
 
-  </article>
+        @media (min-width: 768px) {
+            .container {
+                 
+            }
+        }
+
+         
+        header {
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            color: #57cc8a;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        header p {
+            color: #969896;
+            max-width: 42rem;
+            font-size: 1.125rem;
+        }
+
+         
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 5rem;
+        }
+
+        @media (min-width: 768px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+         
+        .project-card {
+            background-color: #282a2e;
+            border: 1px solid #373b41;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: #57cc8a;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 12rem;
+            overflow: hidden;
+            background-color: #1d1f21;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-title {
+            color: #c5c8c6;
+            font-size: 1.25rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .project-card:hover .project-title {
+            color: #57cc8a;
+        }
+
+        .project-links {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-left: 1rem;
+            flex-shrink: 0;
+        }
+
+        .project-link {
+            color: #969896;
+            transition: color 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-link:hover {
+            color: #57cc8a;
+        }
+
+        .project-link svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        .project-description {
+            color: #969896;
+            margin-bottom: 1rem;
+            line-height: 1.75;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .project-tag {
+            padding: 0.25rem 0.75rem;
+            background-color: #1d1f21;
+            color: #57cc8a;
+            border-radius: 0.375rem;
+            border: 1px solid #373b41;
+            font-size: 0.875rem;
+        }
+
+         
+        footer {
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(55, 59, 65, 0.3);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            color: #969896;
+        }
+
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+            }
+        }
+
+        .footer-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-link {
+            color: #969896;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #57cc8a;
+        }
+
+        .footer-link svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+         
+        .icon-github {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        .icon-external {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    </style>
+    <article>
+    <div class="container">
+        
+        <header>
+            <h1>My Work</h1>
+            <p>A collection of projects I've built and contributed to. Each project represents a unique challenge and learning experience.</p>
+        </header>
+
+        <div class="projects-grid" id="projects-grid">
+        
+        <section class="project-card">
+            <a href="http://localhost:1313/mywork/orionx/" style="text-decoration: none;">
+            
+            <div class="project-image">
+                <img src="http://localhost:1313/images/orionx-screenshot.png" alt="Myworks">
+            </div>
+            
+            <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">OrionX Company WordPress site</h3>
+                        
+                        <div class="project-links">
+                            
+                            
+                            <a href="https://orionxsemi.com" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View project">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-link">
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+</svg>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <p class="project-description">I co-developed this webiste, It is a wordpress that uses a theme purchased from Themeforest</p>
+                    
+                    <div class="project-tags">
+                        
+                        <span class="project-tag">WordPress</span>
+                        
+                    </div>
+                    
+                </a>
+        </section>
+        
+        <section class="project-card">
+            <a href="http://localhost:1313/mywork/aljazeera-rss/" style="text-decoration: none;">
+            
+            <div class="project-image">
+                <img src="http://localhost:1313/images/aljazeera_rss.png" alt="Myworks">
+            </div>
+            
+            <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">Aljazeera RSS plugin</h3>
+                        
+                        <div class="project-links">
+                            
+                            <a href="https://github.com/ahmadessamdev/Aljazeera-RSS-Plugin" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+                            </a>
+                            
+                            
+                        </div>
+                    </div>
+                    <p class="project-description">WordPress plugin fetches the latest news from Aljaeera Arabic News Website</p>
+                    
+                    <div class="project-tags">
+                        
+                        <span class="project-tag">WordPress</span>
+                        
+                        <span class="project-tag">Arabic</span>
+                        
+                        <span class="project-tag">WordPress-plugin</span>
+                        
+                    </div>
+                    
+                </a>
+        </section>
+        
+        <section class="project-card">
+            <a href="http://localhost:1313/mywork/enter-system/" style="text-decoration: none;">
+            
+            <div class="project-image">
+                <img src="http://localhost:1313/images/enter-internal-system.png" alt="Myworks">
+            </div>
+            
+            <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">Internal System for a training center</h3>
+                        
+                        <div class="project-links">
+                            
+                            
+                        </div>
+                    </div>
+                    <p class="project-description">I developed an internal system for a training center handling several internal tasks</p>
+                    
+                    <div class="project-tags">
+                        
+                        <span class="project-tag">MySQL</span>
+                        
+                        <span class="project-tag">Code-igniter</span>
+                        
+                        <span class="project-tag">Bootstrap</span>
+                        
+                    </div>
+                    
+                </a>
+        </section>
+        
+        <section class="project-card">
+            <a href="http://localhost:1313/mywork/ketab-wordpress-theme/" style="text-decoration: none;">
+            
+            <div class="project-image">
+                <img src="http://localhost:1313/images/ketab-theme.png" alt="Myworks">
+            </div>
+            
+            <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-title">Ketab Wordpress Theme</h3>
+                        
+                        <div class="project-links">
+                            
+                            <a href="https://github.com/ahmadessamdev/Ketab-Wordpress-Theme" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+                            </a>
+                            
+                            
+                        </div>
+                    </div>
+                    <p class="project-description">Wordpress classic design responsive theme, created from scratch</p>
+                    
+                    <div class="project-tags">
+                        
+                        <span class="project-tag">WordPress</span>
+                        
+                        <span class="project-tag">WordPress-theme</span>
+                        
+                        <span class="project-tag">Bootstrap</span>
+                        
+                    </div>
+                    
+                </a>
+        </section>
+        
+        </div>
+     </div>    
+    </article>
 
     </main>
+    
+    
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2025 Ahmad Essam</p>
+                <div class="footer-links">
+                    <a href="https://github.com/yourusername" class="footer-link" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://ahmadessamdev.xyz" class="footer-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Main Site</span>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+  
   </body>
 </html>

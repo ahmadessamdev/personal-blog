@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WordPress-Theme on Ahmad Essam</title>
+    <link>http://localhost:1313/tags/wordpress-theme/</link>
+    <description>Recent content in WordPress-Theme on Ahmad Essam</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Mar 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/wordpress-theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ketab Wordpress Theme</title>
+      <link>http://localhost:1313/mywork/ketab-wordpress-theme/</link>
+      <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/mywork/ketab-wordpress-theme/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/images/ketab-theme.png&#34;&gt;&lt;figcaption&gt;&#xA;      &lt;h4&gt;Ketab Theme Screenshot&lt;/h4&gt;&#xA;    &lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;A responsive vantage WordPress theme created while learning theme design and development years ago. I designed and developed it from scratch without using frameworks (except for styling, I used bootstrap).&lt;/p&gt;&#xA;&lt;p&gt;It had a classic simple design. It was installable using the WordPress menu. It worked great!&#xA;It was a learning project, but it needs some updates to work with the latest WordPress version.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

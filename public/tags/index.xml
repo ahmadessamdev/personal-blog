@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Ahmad Essam</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WordPress</title>
+      <link>http://localhost:1313/tags/wordpress/</link>
+      <pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/wordpress/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linux</title>
       <link>http://localhost:1313/tags/linux/</link>
@@ -62,6 +69,34 @@
       <link>http://localhost:1313/tags/mysql/</link>
       <pubDate>Sat, 15 Apr 2017 16:35:17 +0200</pubDate>
       <guid>http://localhost:1313/tags/mysql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WordPress-Plugin</title>
+      <link>http://localhost:1313/tags/wordpress-plugin/</link>
+      <pubDate>Thu, 01 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/wordpress-plugin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bootstrap</title>
+      <link>http://localhost:1313/tags/bootstrap/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Code-Igniter</title>
+      <link>http://localhost:1313/tags/code-igniter/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/code-igniter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WordPress-Theme</title>
+      <link>http://localhost:1313/tags/wordpress-theme/</link>
+      <pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/wordpress-theme/</guid>
       <description></description>
     </item>
   </channel>

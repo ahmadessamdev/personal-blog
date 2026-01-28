@@ -11,6 +11,12 @@
     <loc>http://localhost:1313/mywork/orionx/</loc>
     <lastmod>2024-07-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/wordpress/</loc>
+    <lastmod>2024-07-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -24,9 +30,6 @@
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2021-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2021-03-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ubuntu-server/</loc>
@@ -68,10 +71,22 @@
     <loc>http://localhost:1313/mywork/aljazeera-rss/</loc>
     <lastmod>2016-09-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/wordpress-plugin/</loc>
+    <lastmod>2016-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bootstrap/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/code-igniter/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/mywork/enter-system/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/mywork/ketab-wordpress-theme/</loc>
+    <lastmod>2013-03-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/wordpress-theme/</loc>
     <lastmod>2013-03-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>

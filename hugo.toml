@@ -13,8 +13,8 @@ theme = "m10c"
   
 
 [services]
-  [services.disqus]
-    shortname = 'ahmedspace-com'
+  #[services.disqus]
+  #  shortname = 'ahmedspace-com'
 
 
   [[params.social]]

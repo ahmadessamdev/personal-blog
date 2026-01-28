@@ -3,6 +3,7 @@ title = "Internal System for a training center"
 date = "2015-09-01"
 description= "I developed an internal system for a training center handling several internal tasks"
 featured_image = "/images/enter-internal-system.png"
+tags = [ "MySQL", "Code-igniter", "Bootstrap"]
 +++
 
 {{< figure src="/images/enter-internal-system.png" title="Screenshot of the internal system" >}}
