@@ -1,10 +1,12 @@
 {{ define "main" }}
     <style>
+        /*
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        */
 
         body {
             line-height: 1.6;
@@ -23,7 +25,7 @@
         }
 
         /* Header Section */
-        header {
+        .container header {
             margin-bottom: 4rem;
         }
 
@@ -35,7 +37,7 @@
             line-height: 1.2;
         }
 
-        header p {
+        .container header p {
             color: #969896;
             max-width: 42rem;
             font-size: 1.125rem;
@@ -201,12 +203,12 @@
         }
 
         /* Icons (Simple SVG implementations) */
-        .icon-github {
+        .container .icon-github {
             width: 1.25rem;
             height: 1.25rem;
         }
 
-        .icon-external {
+        .container .icon-external {
             width: 1.25rem;
             height: 1.25rem;
         }
