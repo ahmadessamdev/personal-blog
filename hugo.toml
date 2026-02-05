@@ -45,7 +45,7 @@ theme = "m10c"
   name = "My Work"
   weight = 1
   title= "My Work"
-  url = "/mywork/"
+  url = "/"
 
   [[menu.main]]
   name = "Blog"

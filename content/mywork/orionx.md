@@ -4,7 +4,7 @@ description= "I co-developed this webiste, It is a wordpress that uses a theme p
 date = "2024-07-01"
 featured_image = "/images/orionx-screenshot.png"
 link= "https://orionxsemi.com"
-tags = [ "WordPress"]
+tags = [ "WordPress", "responsive", "modern-design"]
 +++
 
 {{< figure src="/images/orionx-screenshot.png" title="Orionx Website" >}}
