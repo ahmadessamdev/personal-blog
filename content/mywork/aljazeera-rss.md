@@ -1,7 +1,7 @@
 +++
 title = "Aljazeera RSS plugin"
 date = "2016-09-01"
-description= "WordPress plugin fetches the latest news from Aljaeera Arabic News Website"
+description= "WordPress plugin fetches the latest news from Aljazeera Arabic News Website"
 featured_image = "/images/aljazeera_rss.png"
 github = "https://github.com/ahmadessamdev/Aljazeera-RSS-Plugin"
 tags = [ "WordPress", "Arabic", "WordPress-plugin"]

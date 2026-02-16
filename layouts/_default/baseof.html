@@ -63,9 +63,10 @@
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}
+      {{ partial "footer.html" . }}
     </main>
     
-    {{ partial "footer.html" . }}
+    
   
   </body>
 </html>
